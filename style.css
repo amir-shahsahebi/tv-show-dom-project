@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    flex-flow: row wrap
+}
+.div-card {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+}
