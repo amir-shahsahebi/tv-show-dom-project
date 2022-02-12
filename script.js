@@ -8,3 +8,6 @@ let allEpisodes = async () => {
     }
 }
 allEpisodes()
+for (episode of allEpisodes){
+    
+}
