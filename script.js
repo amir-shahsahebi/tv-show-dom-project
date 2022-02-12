@@ -8,7 +8,7 @@ let grabber = async () => {
           let div = document.createElement("div");
           div.classList.add("div-card");
           console.log(episode.image.medium);
-          div.style.backgroundImage = episode.image.medium;
+          div.style.backgroundImage = `url(${episode.image.medium})`;
           container.append(div);
         }
     } catch (err) {
