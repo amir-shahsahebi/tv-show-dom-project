@@ -1,12 +1,20 @@
 .container {
-    display: flex;
-    flex-flow: row wrap;
-    /* justify-content: space-around; */
-    /* align-items: flex-end; */
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-around; */
+  /* align-items: flex-end; */
 }
 .div-card {
-    height: 16rem;
-    width: 25rem;
+  height: 16rem;
+  width: 25rem;
+  background-color: aqua;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.divNum {
+    align-self: start;
+    margin-left: auto;
+    margin-right: auto;
     background-color: aqua;
-    border: 2px solid black;
 }

@@ -6,6 +6,7 @@ let grabber = async () => {
         console.log(res.data)
         allEpisodes = res.data
         for (episode of allEpisodes) {
+            //define card
           let div = document.createElement("div");
           div.classList.add("div-card");
           console.log(episode.image.medium);
@@ -13,6 +14,12 @@ let grabber = async () => {
           div.style.backgroundSize = `cover`;
           div.style.margin= "1rem"
           container.append(div);
+          let divNum= document.createElement("div")
+          divNum.innerText= `S0${episode.season}E0${episode.number}`
+          divNum.classList.add("divNum");
+          div.append(divNum)
+        //   let divName= document.createElement("div")
+        //   divName.innerText= episode.name
         }
     } catch (err) {
         console.log(err)
