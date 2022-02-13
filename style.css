@@ -18,6 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+  position: relative;
+  /* display: relative; */
   /* transition: all ease-in 1s */
 }
 .divNum {
@@ -60,3 +62,33 @@ body {
     opacity: 1;
     /* transition: none ease-in 1s */
 } 
+
+.divScore {
+    position: absolute;
+    /* left: 0; */
+    left: 2px;
+    top: 0;
+    background-color: aqua;
+    /* width: 2rem;
+    height: 1rem  ; */
+}
+.icon {
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0;
+    right: 2px; */
+    /* background-color: rgb(250, 250, 250); */
+    color: red;
+    font-size: 2rem;
+    /* width: 2rem;
+    height: 1rem  ; */
+}
+.a {
+        position: absolute;
+    /* left: 0; */
+    top: 0;
+    right: 2px;
+    /* background-color: rgb(250, 250, 250); */
+    /* color: red;
+    font-size: 2rem; */
+}

@@ -26,6 +26,18 @@ let grabber = async () => {
           divSummary.innerHTML = episode.summary
           divSummary.classList.add("divSummary")
           div.append(divSummary)
+          divScore = document.createElement("span")
+          divScore.innerText = `${episode.rating.average}/10`;
+          let a = document.createElement("a")
+          a.href=episode.url
+          a.classList.add("a")
+          divScore.classList.add("divScore")
+          div.append(divScore)
+          let icon = document.createElement("i")
+          icon.classList.add("fas", "fa-play" , "icon");
+          a.append(icon)
+          div.append(a)
+          
         }
     } catch (err) {
         console.log(err)
