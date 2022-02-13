@@ -1,7 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: blue; */
+}
 .container {
   display: flex;
   flex-flow: row wrap;
-  /* justify-content: space-around; */
+  background-color: rgb(224, 152, 152);
+  justify-content: space-around;
   /* align-items: flex-end; */
 }
 .div-card {
@@ -11,6 +17,8 @@
   border: 2px solid black;
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
+  /* transition: all ease-in 1s */
 }
 .divNum {
     align-self: start;
@@ -18,3 +26,37 @@
     margin-right: auto;
     background-color: aqua;
 }
+.divName {
+    align-self: start;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+}
+.divSummary {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(123, 255, 0, 0.438);
+    /* display: none; */
+    opacity: 0;
+    transition: all ease-in 0.5s
+}
+.divSummary p {
+    background-color: rgba(255, 0, 0, 0.603);
+    margin-bottom: auto;
+    text-align: center;
+    /* transition: all ease 0.5 */
+}
+ /* p:hover {
+    display: ;
+} */
+
+.div-card:hover .divSummary {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(123, 255, 0, 0.438);
+    background-color: aqua;    
+    opacity: 1;
+    /* transition: none ease-in 1s */
+} 
