@@ -37,14 +37,17 @@ let grabber = async () => {
           icon.classList.add("fas", "fa-play" , "icon");
           a.append(icon)
           div.append(a)
-          
+          // console.log(episode)
         }
+        all= allEpisodes
+        console.log(all)
+        let allFilter = all.filter(x=>x.name.includes("Long") || x.summary.includes("Long") )
+        console.log(allFilter)
     } catch (err) {
         console.log(err)
     }
 }
 grabber()
-
 // container.addEventListener("mousemove",(e)=>{
 //     let summary = document.querySelectorAll(".divSummary")
 //     console.dir(e.target)
@@ -59,4 +62,10 @@ grabber()
 //             }
 //     }
 // })
+
+// for episode n & number m use this method:
+// https://api.tvmaze.com/shows/5/episodebynumber?season=1&number=1
+// number 5 is id of true detective
+
+// for showing seasons we can use https://api.tvmaze.com/shows/5/seasons
 

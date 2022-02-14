@@ -3,6 +3,13 @@ body {
     padding: 0;
     /* background-color: blue; */
 }
+header{
+    width: 100%;
+    height: 20rem;
+    background-image: url("https://wallpapermemory.com/uploads/756/true-detective-background-full-hd-1920x1080-256136.jpg");
+    background-repeat: no-repeat;
+    
+}
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -91,4 +98,11 @@ body {
     /* background-color: rgb(250, 250, 250); */
     /* color: red;
     font-size: 2rem; */
+    transition: all ease-out 0.5s;
+}
+.icon:hover {
+    /* font-size: 3rem; */
+    background-color: black;
+    color: rgb(255, 0, 0);
+    transition: all ease-out 0.5s;
 }
