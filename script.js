@@ -1,10 +1,35 @@
 let container = document.querySelector(".container")
-
-
-let all = async function () {
-  const all = await axios.get("true.json");
-  return all.date;
-};
+let divHeader = document.querySelector(".div-header")
+let select = document.querySelector("select");
+let eps = async () => {
+  try {
+    let all = await axios.get("true.json");
+    let allepisode = all.data
+    
+    select.name = "select";
+    let option1 = document.createElement("option");
+    option1.value = "all";
+    option1.innerText = "All episodes";
+    select.append(option1);
+    // console.log(allepisode);
+    for (one of allepisode) {
+      // console.log(one)  
+      let option = document.createElement("option")
+      option.value= one.name
+      option.innerText = `S0${one.season}E0${one.number} - ${one.name}`;
+      select.append(option)
+    }
+    // divHeader.append(select)
+  }
+   catch (err) {
+    console.log(err)
+  }
+}
+eps()
+    
+    // return all.date;
+// let all = eps().then(data=>data)
+// console.log(all);
 
 
 
@@ -50,17 +75,22 @@ let grabber = async () => {
           // console.log(episode)
         }
         let all= allEpisodes
-        console.log(all)
+        // console.log(all)
         let allFilter = all.filter(x=>x.name.includes("Long") || x.summary.includes("Long") )
-        console.log(allFilter)
+        // console.log(allFilter)
     } catch (err) {
         console.log(err)
     }
 }
-grabber()
+// grabber()
+// let select = document.querySelector("select");
+select.addEventListener("click", (e)=>{
+  console.log(e.target.value);
+  if (e.target.value === "all") {
+    grabber();
+  }
+})
 
-
-console.log(all)
 // container.addEventListener("mousemove",(e)=>{
 //     let summary = document.querySelectorAll(".divSummary")
 //     console.dir(e.target)
