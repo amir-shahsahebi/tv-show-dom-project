@@ -1,4 +1,14 @@
 let container = document.querySelector(".container")
+
+
+let all = async function () {
+  const all = await axios.get("true.json");
+  return all.date;
+};
+
+
+
+
 let grabber = async () => {
     try {
         // const res = await axios.get("https://api.tvmaze.com/shows/5/episodes")
@@ -39,7 +49,7 @@ let grabber = async () => {
           div.append(a)
           // console.log(episode)
         }
-        all= allEpisodes
+        let all= allEpisodes
         console.log(all)
         let allFilter = all.filter(x=>x.name.includes("Long") || x.summary.includes("Long") )
         console.log(allFilter)
@@ -48,6 +58,9 @@ let grabber = async () => {
     }
 }
 grabber()
+
+
+console.log(all)
 // container.addEventListener("mousemove",(e)=>{
 //     let summary = document.querySelectorAll(".divSummary")
 //     console.dir(e.target)

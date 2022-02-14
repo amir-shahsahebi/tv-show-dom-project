@@ -6,9 +6,9 @@ body {
 header{
     width: 100%;
     height: 20rem;
-    background-image: url("https://wallpapermemory.com/uploads/756/true-detective-background-full-hd-1920x1080-256136.jpg");
-    background-repeat: no-repeat;
-    
+    /* background-image: url("https://wallpapermemory.com/uploads/756/true-detective-background-full-hd-1920x1080-256136.jpg");
+    background-repeat: no-repeat; */
+    background-color: bisque;
 }
 .container {
   display: flex;
