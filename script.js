@@ -157,6 +157,7 @@ function creation(allEpisodes) {
     divScore.innerText = `${episode.rating.average}/10`;
     let a = document.createElement("a");
     a.href = episode.url;
+    a.target="_blank"
     a.classList.add("a");
     divScore.classList.add("divScore");
     div.append(divScore);
