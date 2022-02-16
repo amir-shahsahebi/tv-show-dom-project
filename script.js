@@ -52,7 +52,7 @@ let eps = async () => {
 
     select.name = "select";
     let option0 = document.createElement("option");
-    option0.value = "nothing";
+    option0.value = "all";
     option0.innerText = "please select what episode you want";
     select.append(option0);
     let option1 = document.createElement("option");
@@ -125,11 +125,6 @@ let grabber = async (target) => {
     //   div.append(a)
     //   // console.log(episode)
     // }
-    let all = allEpisodes;
-    // console.log(all)
-    let allFilter = all.filter(
-      (x) => x.name.includes("Long") || x.summary.includes("Long")
-    );
     // console.log(allFilter)
   } catch (err) {
     console.log(err);
@@ -175,6 +170,7 @@ function creation(allEpisodes) {
 // grabber()
 // let select = document.querySelector("select");
 select.addEventListener("click", (e) => {
+  document.querySelector("input").value=""
   console.log(e.target.value);
   if (e.target.value === "nothing") {
     let divs = document.querySelectorAll(".div-card");
@@ -242,3 +238,21 @@ input.addEventListener("keyup", (e) => {
 // number 5 is id of true detective
 
 // for showing seasons we can use https://api.tvmaze.com/shows/5/seasons
+let start = async () => {
+  try {
+    // const res = await axios.get("https://api.tvmaze.com/shows/5/episodes")
+    const res = await axios.get("true.json");
+    allEpisodes = res.data;
+    creation(allEpisodes);
+;
+  } catch (err) {
+    console.log(err);
+  }
+};
+window.addEventListener("load", start())
+
+    // let pFooter = document.createElement("footer");
+    // pFooter.innerText =
+    //   "This is a sample website that created with javascript and api - Amir-Shahsahebi";
+    // pFooter.style.Color = "white";
+    // body.append(pFooter);
