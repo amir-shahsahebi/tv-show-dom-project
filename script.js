@@ -53,7 +53,7 @@ let eps = async () => {
     select.name = "select";
     let option0 = document.createElement("option");
     option0.value = "nothing";
-    option0.innerText = "please select witch you want";
+    option0.innerText = "please select what episode you want";
     select.append(option0);
     let option1 = document.createElement("option");
     option1.value = "all";
