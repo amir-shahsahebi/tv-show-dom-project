@@ -1,12 +1,18 @@
 let text = [
-  "Life's barely long enough to get good at one thing. So be careful what you get good at.",
-  // "The world needs bad men. We keep the other bad men from the door.",
-  // "Trouble with dying later is you've already grown up. Damage is done. It's too late.",
-  // "There is no such thing as forgiveness, people just have short memories.",
+  "If the only thing keeping a person decent is the expectation of divine reward then, brother, that person is a piece of shit. And I’d like to get as many of them out in the open as possible. You gotta get together and tell yourself stories that violate every law of the universe just to get through the goddamn day? What’s that say about your reality?",
   // "I'd consider myself a realist, all right? But in philosophical terms, I'm what's called a pessimist.",
   // "If the common good has got to make up fairy tales, then it’s not good for anybody.",
   // "This place is like somebody’s memory of a town, and the memory is fading. It’s like there was never anything here but a jungle.",
 ];
+// let text = [
+//   "Life's barely long enough to get good at one thing. So be careful what you get good at.",
+//   // "The world needs bad men. We keep the other bad men from the door.",
+//   // "Trouble with dying later is you've already grown up. Damage is done. It's too late.",
+//   // "There is no such thing as forgiveness, people just have short memories.",
+//   // "I'd consider myself a realist, all right? But in philosophical terms, I'm what's called a pessimist.",
+//   // "If the common good has got to make up fairy tales, then it’s not good for anybody.",
+//   // "This place is like somebody’s memory of a town, and the memory is fading. It’s like there was never anything here but a jungle.",
+// ];
 function typing(){
   let k = 0;
   for (let i=0;i<text.length;i++){

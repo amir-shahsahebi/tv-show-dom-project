@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    /* font-family: 'Lobster', cursive; */
+    
     /* width: 100vh;
     height: 100vw; */
     /* background-position: center; */
@@ -13,7 +15,8 @@ header{
   background-size: cover; */
     background : url(b3.gif);
   background-size: cover;
-
+  font-family:'Gideon roman', 'Red Hat Mono', monospace;
+    font-weight: 500;
     /* background: url("https://wallpapermemory.com/uploads/756/true-detective-background-full-hd-1920x1080-256136.jpg");
     background-size: cover;
     background-position: center; */
@@ -47,9 +50,12 @@ header{
 .dialog {
     position: absolute;
     right: 0;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 28%;
     height: auto;
+}
+.dialog-content{
+color: white;
 }
 /* main {
      width: 100%;
@@ -72,12 +78,13 @@ header{
 .div-card {
   height: 16rem;
   width: 25rem;
-  background-color: aqua;
+  /* background-color: aqua; */
   border: 2px solid black;
   display: flex;
   flex-direction: column;
   margin-top: 15px;
   position: relative;
+  font-family: 'Lobster', cursive;
   /* display: relative; */
   /* transition: all ease-in 1s */
 }
@@ -85,25 +92,31 @@ header{
     align-self: start;
     margin-left: auto;
     margin-right: auto;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Gideon roman', monospace;
+    font-size: 1.2rem;
 }
 .divName {
     align-self: start;
     margin-left: auto;
     margin-right: auto;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 .divSummary {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(123, 255, 0, 0.438);
+    /* background-color: rgba(0, 0, 0, 0.733);
+    color: white; */
     /* display: none; */
     opacity: 0;
     transition: all ease-in 0.5s
 }
 .divSummary p {
-    background-color: rgba(255, 0, 0, 0.603);
+    /* background-color: rgba(0, 0, 0, 0.623); */
+    color: white;
     margin-bottom: auto;
     text-align: center;
     /* transition: all ease 0.5 */
@@ -116,8 +129,8 @@ header{
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(123, 255, 0, 0.438);
-    background-color: aqua;    
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;   
     opacity: 1;
     /* transition: none ease-in 1s */
 } 
@@ -127,7 +140,8 @@ header{
     /* left: 0; */
     left: 2px;
     top: 0;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
+    color: white;
     /* width: 2rem;
     height: 1rem  ; */
 }
